@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,124 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCA-hE-IC8">
+                                <rect key="frame" x="144" y="295" width="76" height="37"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="adi-rp-mnS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyQuiz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FpN-k9-6zR">
+                                <rect key="frame" x="111" y="192" width="142" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UCA-hE-IC8" secondAttribute="bottom" constant="335" id="6GV-oV-R8V"/>
+                            <constraint firstItem="FpN-k9-6zR" firstAttribute="centerX" secondItem="UCA-hE-IC8" secondAttribute="centerX" id="8Rb-rt-SbM"/>
+                            <constraint firstItem="UCA-hE-IC8" firstAttribute="top" secondItem="FpN-k9-6zR" secondAttribute="bottom" constant="58" id="Pwh-kq-yOL"/>
+                            <constraint firstItem="FpN-k9-6zR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="111" id="VAi-I0-W2u"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FpN-k9-6zR" secondAttribute="trailing" constant="122" id="dcR-Zz-BcY"/>
+                            <constraint firstItem="UCA-hE-IC8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="144" id="iF2-j1-iGx"/>
+                            <constraint firstItem="FpN-k9-6zR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="172" id="r5U-wD-eQf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OOm-9T-qs3">
+            <objects>
+                <viewController id="Uva-m1-Q79" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hfC-Ns-0Gi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etB-oj-Vo3">
+                                <rect key="frame" x="49" y="37" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="ヤフオク！にて過去最高額で落札された商品はなんでしょう?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kb2-4C-2z2">
+                                <rect key="frame" x="33" y="81.5" width="305" height="128.5"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gk9-lP-xwr">
+                                <rect key="frame" x="33" y="204" width="299" height="430"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ySC-yq-YCl">
+                                        <rect key="frame" x="0.0" y="0.0" width="299" height="100"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="恐竜の化石">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5h-Xv-6Os">
+                                        <rect key="frame" x="0.0" y="110" width="299" height="100"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="スペースシャトル">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f60-Vc-kds">
+                                        <rect key="frame" x="0.0" y="220" width="299" height="100"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="タイムマシン">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6UB-Yx-Lux">
+                                        <rect key="frame" x="0.0" y="330" width="299" height="100"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="無人島">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kb2-4C-2z2" firstAttribute="leading" secondItem="N3Q-1L-k6f" secondAttribute="leading" constant="33" id="7Da-ei-xyw"/>
+                            <constraint firstItem="N3Q-1L-k6f" firstAttribute="trailing" secondItem="etB-oj-Vo3" secondAttribute="trailing" constant="284" id="9e1-SB-hl1"/>
+                            <constraint firstItem="N3Q-1L-k6f" firstAttribute="bottom" secondItem="kb2-4C-2z2" secondAttribute="bottom" constant="457" id="FYh-Rg-3ZN"/>
+                            <constraint firstItem="kb2-4C-2z2" firstAttribute="leading" secondItem="gk9-lP-xwr" secondAttribute="leading" id="Xs3-xB-R3P"/>
+                            <constraint firstItem="N3Q-1L-k6f" firstAttribute="trailing" secondItem="gk9-lP-xwr" secondAttribute="trailing" constant="43" id="dra-x9-5wI"/>
+                            <constraint firstItem="etB-oj-Vo3" firstAttribute="leading" secondItem="N3Q-1L-k6f" secondAttribute="leading" constant="49" id="oWS-H1-ctH"/>
+                            <constraint firstItem="N3Q-1L-k6f" firstAttribute="bottom" secondItem="gk9-lP-xwr" secondAttribute="bottom" constant="33" id="obE-CM-ncV"/>
+                            <constraint firstItem="N3Q-1L-k6f" firstAttribute="trailing" secondItem="kb2-4C-2z2" secondAttribute="trailing" constant="37" id="szv-Tu-Iy1"/>
+                            <constraint firstItem="kb2-4C-2z2" firstAttribute="top" secondItem="etB-oj-Vo3" secondAttribute="bottom" constant="24" id="t8u-GP-ro2"/>
+                            <constraint firstItem="etB-oj-Vo3" firstAttribute="top" secondItem="N3Q-1L-k6f" secondAttribute="top" constant="17" id="u4H-bb-UPZ"/>
+                            <constraint firstItem="gk9-lP-xwr" firstAttribute="top" secondItem="hfC-Ns-0Gi" secondAttribute="top" constant="204" id="zIj-UJ-ULQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="N3Q-1L-k6f"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h7B-kQ-SoM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1060" y="131.78410794602701"/>
         </scene>
     </scenes>
 </document>

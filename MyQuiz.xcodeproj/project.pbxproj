@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33735ED12005BD2000A0046F /* QuestionDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33735ED02005BD2000A0046F /* QuestionDataManager.swift */; };
 		338CBF771FFF9361007167CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338CBF761FFF9361007167CF /* AppDelegate.swift */; };
 		338CBF791FFF9361007167CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338CBF781FFF9361007167CF /* ViewController.swift */; };
 		338CBF7C1FFF9361007167CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 338CBF7A1FFF9361007167CF /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33735ED02005BD2000A0046F /* QuestionDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDataManager.swift; sourceTree = "<group>"; };
 		338CBF731FFF9361007167CF /* MyQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		338CBF761FFF9361007167CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		338CBF781FFF9361007167CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				338CBF781FFF9361007167CF /* ViewController.swift */,
 				338CBF7A1FFF9361007167CF /* Main.storyboard */,
 				33B113E32004746B00BB5E25 /* question.csv */,
+				33735ED02005BD2000A0046F /* QuestionDataManager.swift */,
 				338CBF7D1FFF9361007167CF /* Assets.xcassets */,
 				338CBF7F1FFF9361007167CF /* LaunchScreen.storyboard */,
 				338CBF821FFF9361007167CF /* Info.plist */,
@@ -142,6 +145,7 @@
 			files = (
 				338CBF791FFF9361007167CF /* ViewController.swift in Sources */,
 				338CBF771FFF9361007167CF /* AppDelegate.swift in Sources */,
+				33735ED12005BD2000A0046F /* QuestionDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

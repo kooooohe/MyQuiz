@@ -102,17 +102,16 @@ class QuestionDataManager {
             print("csvファイル読み込みエラーが発生しました\(error)")
             return
         }
-        
-        //次の問題を取り出す
-        
-        func nextQuestion() -> QuestionData? {
-            if nowQuestionIndex < questionDataArray.count {
-                let nextQuestion = questionDataArray[nowQuestionIndex]
-                nowQuestionIndex += 1
-                return nextQuestion
-            }
-            return nil
+    }
+    //次の問題を取り出す
+    
+    func nextQuestion() -> QuestionData? {
+        if nowQuestionIndex < questionDataArray.count {
+            let nextQuestion = questionDataArray[nowQuestionIndex]
+            nowQuestionIndex += 1
+            return nextQuestion
         }
+        return nil
     }
 }
 

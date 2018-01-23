@@ -139,6 +139,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="N3Q-1L-k6f"/>
                     </view>
+                    <connections>
+                        <outlet property="answer1Button" destination="ySC-yq-YCl" id="mx9-EA-mUm"/>
+                        <outlet property="answer2Button" destination="F5h-Xv-6Os" id="1mZ-tk-bRJ"/>
+                        <outlet property="answer3Button" destination="f60-Vc-kds" id="M2u-uC-Eoj"/>
+                        <outlet property="answer4Button" destination="6UB-Yx-Lux" id="xwy-ll-fiH"/>
+                        <outlet property="correctImageView" destination="tZ6-5o-cBC" id="4gy-K3-qwc"/>
+                        <outlet property="incorrectImageView" destination="gTx-kg-6SQ" id="2kk-RC-ww9"/>
+                        <outlet property="questionNoLabel" destination="etB-oj-Vo3" id="qsv-MI-v70"/>
+                        <outlet property="questionTextView" destination="kb2-4C-2z2" id="RNa-HR-KDg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h7B-kQ-SoM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

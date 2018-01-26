@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AudioToolbox
 
 class QuestionViewController: UIViewController {
     var questionData: QuestionData!
@@ -38,5 +39,61 @@ class QuestionViewController: UIViewController {
         super.didReceiveMemoryWarning()
      
     }
-
+    
+    @IBAction func tapAnswer1Button(_ sender: Any) {
+        questionData.userChoiceAnswerNumber = 1 //選択した答えの番号を保存する
+        goNextQuestionWithAnimation()           //次の問題に進む
+    }
+    @IBAction func tapAnswer2Button(_ sender: Any) {
+        questionData.userChoiceAnswerNumber = 2
+        goNextQuestionWithAnimation()
+    }
+    
+    @IBAction func tapAnswer3Button(_ sender: Any) {
+        questionData.userChoiceAnswerNumber = 3
+        goNextQuestionWithAnimation()
+    }
+    @IBAction func tapAnswer4Button(_ sender: Any) {
+        questionData.userChoiceAnswerNumber = 4
+        goNextQuestionWithAnimation()
+    }
+    
+    //次の問題にアニメーション付きで進む
+    func goNextQuestionWithAnimation() {
+        //正解しているか判定
+        if questionData.isCorrect() {
+            //正解のアニメーションを再生しながら次の問題へ遷移する
+        } else {
+            //不正解のアニメーションを再生しながら次の問題へ遷移する
+        }
+    }
+    
+    //次の問題に正解のアニメーション付きで遷移する
+    func goNextQuestionWithCorrectAnimation() {
+        //正解を伝える音を鳴らす
+        AudioServicesPlayAlertSound(1025)
+        
+        
+        //アニメーション
+        UIView.animate(withDuration: 2.0, animations: {
+            //アルファ値を1.0に変化させる（初期値はStoryboardで0.0に設定済み)
+            self.correctImageView.alpha = 1.0
+        }) { (Bool) in
+            //アニメーション完了後に次の問題へ進む
+        }
+        
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

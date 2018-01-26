@@ -14,6 +14,7 @@
 		338CBF7E1FFF9361007167CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 338CBF7D1FFF9361007167CF /* Assets.xcassets */; };
 		338CBF811FFF9361007167CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 338CBF7F1FFF9361007167CF /* LaunchScreen.storyboard */; };
 		33B113E42004746B00BB5E25 /* question.csv in Resources */ = {isa = PBXBuildFile; fileRef = 33B113E32004746B00BB5E25 /* question.csv */; };
+		33C1598C201ADA8B0060C993 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C1598B201ADA7E0060C993 /* AudioToolbox.framework */; };
 		33C2E2F12016E5FA00C770CF /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C2E2F02016E5FA00C770CF /* StartViewController.swift */; };
 		33C2E2F32016E60700C770CF /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C2E2F22016E60700C770CF /* QuestionViewController.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 		338CBF801FFF9361007167CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		338CBF821FFF9361007167CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33B113E32004746B00BB5E25 /* question.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question.csv; sourceTree = "<group>"; };
+		33C1598B201ADA7E0060C993 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		33C2E2F02016E5FA00C770CF /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		33C2E2F22016E60700C770CF /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -37,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33C1598C201ADA8B0060C993 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +51,7 @@
 			children = (
 				338CBF751FFF9361007167CF /* MyQuiz */,
 				338CBF741FFF9361007167CF /* Products */,
+				33C1598A201ADA7E0060C993 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +78,14 @@
 				338CBF821FFF9361007167CF /* Info.plist */,
 			);
 			path = MyQuiz;
+			sourceTree = "<group>";
+		};
+		33C1598A201ADA7E0060C993 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33C1598B201ADA7E0060C993 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

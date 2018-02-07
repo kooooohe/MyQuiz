@@ -166,10 +166,10 @@
             </objects>
             <point key="canvasLocation" x="1060" y="131.78410794602701"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="Y2L-tF-LAO">
             <objects>
-                <viewController storyboardIdentifier="result" id="4Tt-xB-Ys8" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="result" id="4Tt-xB-Ys8" customClass="ResultViewController" customModule="MyQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SsA-GL-ivs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -183,6 +183,9 @@
                                 <state key="normal" title="タイトルへ戻る">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Ur4-wo-BPM" kind="unwind" unwindAction="goToTitle:" id="GFk-oT-hu1"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="HUR-N3-EGt">
                                 <rect key="frame" x="107" y="155" width="161" height="204"/>
@@ -218,8 +221,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZYT-wU-ivk"/>
                     </view>
+                    <connections>
+                        <outlet property="correctPercentLabel" destination="SRL-iW-3n0" id="10E-Q3-4DY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8vX-EZ-BEV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Ur4-wo-BPM" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1884" y="134"/>
         </scene>
